@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+# CW Exercise for Excellence Fellowship Opportunity
+[Application deployed to GitHub Pages](https://wuaho.github.io/CoverWalletExercise/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Below, the exercise:
 
-## Available Scripts
+The candidate will create a React.js app fulfilling the following criteria:
+- The app will have a main component centered on the page both horizontal and vertical
+- The component will display an input field, a button, and an empty div where we will display some information
+- The input field should allow only numeric values
+- When you click the button, the app should get the value from the input, send it to a function that will run some calculations, and then display the result inside the empty div
+- The function will receive just one numeric parameter and will return back the value of the Fibonacci sequence for that position. We will assume the Fibonacci sequence starts with 1.
+- Unit tests are optional
+- CSS, design, and any other addition to the app are optional as well but feel free to add whatever you want here if you feel the need
 
-In the project directory, you can run:
+# Solution-Approach
 
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+I started from the basic React project and continued modifying the files that were already contained in the folder:
+- **App.js:** contains the main component and the code for the function that calculates the Fibonacci sequence for a given number. I decided to go with the iterative implementation of the Fibonacci sequence that has linear complexity O(n). Line 21 of the file was commented to make the writting of the tests an easier task.
+- **App.css:** some css was attached to make the application look better.
+- **App.test.js:** tests were also made to confirm that the application works the way it should. Four different cases were addressed:
+	- The user enters a small natural number, Fibonacci(n=10) (the div is updated with the correct value).
+	- The user enters a excessively large number, Fibonacci(n=1000000) (the div is updated with the value NaN).
+	- The user enters an empty string (the div is updated with an empty string).
+	- The user enters a negative number (the div is updated with an empty string).
+	
+	Code refactoring could be done to make the code in the tests look cleaner.
