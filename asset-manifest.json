@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/CoverWalletExercise/static/css/main.4465098b.chunk.css",
+    "main.js": "/CoverWalletExercise/static/js/main.20b77545.chunk.js",
+    "main.js.map": "/CoverWalletExercise/static/js/main.20b77545.chunk.js.map",
+    "runtime-main.js": "/CoverWalletExercise/static/js/runtime-main.af907efe.js",
+    "runtime-main.js.map": "/CoverWalletExercise/static/js/runtime-main.af907efe.js.map",
+    "static/css/2.fb17aa6d.chunk.css": "/CoverWalletExercise/static/css/2.fb17aa6d.chunk.css",
+    "static/js/2.a51e35e6.chunk.js": "/CoverWalletExercise/static/js/2.a51e35e6.chunk.js",
+    "static/js/2.a51e35e6.chunk.js.map": "/CoverWalletExercise/static/js/2.a51e35e6.chunk.js.map",
+    "index.html": "/CoverWalletExercise/index.html",
+    "static/css/2.fb17aa6d.chunk.css.map": "/CoverWalletExercise/static/css/2.fb17aa6d.chunk.css.map",
+    "static/css/main.4465098b.chunk.css.map": "/CoverWalletExercise/static/css/main.4465098b.chunk.css.map",
+    "static/js/2.a51e35e6.chunk.js.LICENSE.txt": "/CoverWalletExercise/static/js/2.a51e35e6.chunk.js.LICENSE.txt",
+    "static/media/coverwalletlogo.c0c36f4a.png": "/CoverWalletExercise/static/media/coverwalletlogo.c0c36f4a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.af907efe.js",
+    "static/css/2.fb17aa6d.chunk.css",
+    "static/js/2.a51e35e6.chunk.js",
+    "static/css/main.4465098b.chunk.css",
+    "static/js/main.20b77545.chunk.js"
+  ]
+}
